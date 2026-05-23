@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="upScreen">
+        <h1>Рассчитай выгоду</h1>
+        <div class="upScreenRight">
+            <div class="choose">
+                <h2>Вклад</h2>
+            </div>
+            <h2>Счёт</h2>
+            <h2>Кредит</h2>
+            <h2>Ипотека</h2>
+        </div>
+    </div>
+    <form class="main-opros">
+        <div class="main-opros-left">
+            <div id="main-calculate">
+                <div id="calculate">
+                    <h5 id="inside-calculate">Сумма вклада</h5>
+                    <input id="calculate-input" type="number" required max="100000" value="30000">
+                </div>
+                <div id="undercalculate">
+                    <p>от 10000 ₽</p>
+                </div>
+            </div>
+            <div id="srok">
+                <h3>Срок вклада:</h3>
+                <div id="monthes">
+                    <div class="main-button">
+                        <input class="button" type="radio" data-month="3" name="vklad">
+                        <p>3 месяца</p>
+                    </div>
+                    <div class="main-button">
+                        <input class="button" type="radio" data-month="4" value="4" name="vklad">
+                        <p>4 месяца</p>
+                    </div>
+                    <div class="main-button">
+                        <input class="button" type="radio" data-month="6" value="6" name="vklad">
+                        <p>6 месяца</p>
+                    </div>
+                    <div class="main-button">
+                        <input class="button" type="radio" data-month="9" value="9" name="vklad">
+                        <p>9 месяца</p>
+                    </div>
+                    <div class="main-button">
+                        <input class="button" type="radio" data-month="12" value="12" name="vklad">
+                        <p>1 год</p>
+                    </div>
+                    <div class="main-button">
+                        <input class="button" type="radio" data-month="18" value="18" name="vklad">
+                        <p>1,5 года</p>
+                    </div>
+                    <div class="main-button">
+                        <input class="button" type="radio" data-month="24" value="24" name="vklad">
+                        <p>2 года</p>
+                    </div>
+                    <div class="main-button active-period">
+                        <input class="button" type="radio" data-month="36" value="36" name="vklad">
+                        <p>3 года</p>
+                    </div>
+                </div>
+            </div>
+            <div id="srok">
+                <h3>Условия:</h3>
+                <div class="main-uslovia">
+                    <div class="uslovia" id="turn-on">
+                        <div class="circle"></div>
+                        <input class="uslovia-button" id="first" checked="true" type="checkbox" data-name="kapital">
+                    </div>
+                    <p>Без вывода процентов (капитализация)</p>
+                    <img src="assets/info.svg" alt="">
+                </div>
+                <div class="main-uslovia">
+                    <div class="uslovia">
+                        <div class="circle"></div>
+                        <input class="uslovia-button" id="second" checked="true" type="checkbox" data-name="popolnenie">
+                    </div>
+                    <p>С пополнением и частичным снятием</p>
+                    <img src="assets/info.svg" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-opros-right">
+            <div id="main-opros-right-up">
+                <h2>Наше предложение</h2>
+                <div></div>
+            </div>
+            <div id="numbers">
+                <div class="numbers-row">
+                    <div class="first-row">
+                        <p>Условия</p>
+                    </div>
+                    <div class="second-row">
+                        <p>Всем клиентам</p>
+                    </div>
+                    <div class="second-row">
+                        <p>Клиентам Alfa Only</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="numbers-row">
+                    <div class="first-row">
+                        <h3>Процентная ставка</h3>
+                    </div>
+                    <div class="second-row">
+                        <h2 id="rate-all">15,80%</h2>
+                    </div>
+                    <div class="second-row">
+                        <h2 id="rate-only">16,53%</h2>
+                    </div>
+                </div>
+                <hr>
+                <div class="numbers-row">
+                    <div class="first-row">
+                        <h3>Доход по вкладу</h3>
+                    </div>
+                    <div class="second-row">
+                        <h2 id="profit-all">+ 142 200 ₽</h2>
+                    </div>
+                    <div class="second-row">
+                        <h2 id="profit-only">+ 148 770 ₽</h2>
+                    </div>
+                </div>
+                <hr>
+                <div class="numbers-row">
+                    <div class="first-row">
+                        <h3>Сумма в конце срока</h3>
+                    </div>
+                    <div class="second-row">
+                        <h2 id="total-all">442 200 ₽</h2>
+                    </div>
+                    <div class="second-row">
+                        <h2 id="total-only">448 770 ₽</h2>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+            <div id="main-opros-right-down">
+                <div class="box" id="left">
+                    <input type="button" class="right-buttons">
+                    <h2>Подробные условия</h2>
+                </div>
+                <div class="box" id="right">
+                    <button id="submit" type="submit" class="right-buttons"></button>
+                    <h2>Открыть вклад</h2>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+    <script src="script.js"></script>
+</html>
